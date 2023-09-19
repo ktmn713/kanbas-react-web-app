@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grades</title>
+    <style>
+        input[type="number"]::-ms-value {align-content: center;}
+    </style>
+</head>
+<body>
+<table cellpadding="10" width="100%">
+    <tbody>
+    <tr>
+        <td valign="top">
+            <ul>
+                <li><a href="profile/index.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="courseNav.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+
+        <td valign="top">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+            <br/>
+            <label for="gradebook"></label>
+            <select id="gradebook">
+                <option value="missing">missing</option>
+                <option selected value="GRADEBOOK">Gradebook</option>
+            </select>
+
+            <button type="button">Import</button>
+
+            <label for="export"></label>
+            <select id="export">
+                <option value="missing">missing</option>
+                <option selected value="EXPORT">Export</option>
+            </select>
+
+            <button type="button">Configure</button>
+
+            <h3>Student Names</h3>
+            <form id="names">
+                <input id="names-student" placeholder="Search Students"/>
+            <h3>Assignment Names</h3>
+                <input id="names-assignment" placeholder="Search Assignments"/>
+            </form>
+
+            <br/>
+            <button type="button">Apply Filters</button>
+            <br/>
+            <table border="1" width="100%">
+                <thead>
+                <tr>
+                    <th width="150">Student Name</th>
+                    <th>A1 SETUP <br/> Out of 100</th>
+                    <th>A2 HTML <br/> Out of 100</th>
+                    <th>A3 CSS <br/> Out of 100</th>
+                    <th>A4 BOOTSTRAP <br/> Out of 100</th>
+                    <th>A5 JAVASCRIPT <br/> Out of 100</th>
+                    <th>A6 REACT <br/> Out of 100</th>
+                    <th>A7 REDUX <br/> Out of 100</th>
+                    <th>A8 NODE <br/> Out of 100</th>
+                    <th>A9 MONGO <br/> Out of 100</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Harry Potter</td>
+                    <td align ="center">
+                        <input type="number" max="100" min="0" value="90"/>
+                    </td>
+                    <td align="center">90</td>
+                    <td align="center">90</td>
+                    <td align="center">90</td>
+                    <td align="center">90</td>
+                    <td align="center">90</td>
+                    <td align="center">90</td>
+                    <td align="center">90</td>
+                    <td align="center">90</td>
+                </tr>
+                <tr>
+                    <td>Ron Weasley</td>
+                    <td align="center">70</td>
+                    <td align="center">
+                        <input type="number" max="100" min="0" value="70"/>
+                    </td>
+                    <td align="center">70</td>
+                    <td align="center">70</td>
+                    <td align="center">70</td>
+                    <td align="center">70</td>
+                    <td align="center">70</td>
+                    <td align="center">70</td>
+                    <td align="center">70</td>
+                </tr>
+                <tr>
+                    <td>Hermione Granger</td>
+                    <td align="center">100</td>
+                    <td align="center">100</td>
+                    <td align="center">
+                        <input type="number" max="100" min="0" value="100"/>
+                    </td>
+                    <td align="center">100</td>
+                    <td align="center">100</td>
+                    <td align="center">100</td>
+                    <td align="center">100</td>
+                    <td align="center">100</td>
+                    <td align="center">100</td>
+                </tr>
+                <tr>
+                    <td>Neville Longbottom</td>
+                    <td align="center">50</td>
+                    <td align="center">50</td>
+                    <td align="center">50</td>
+                    <td align="center">
+                        <input type="number" max="100" min="0" value="50"/>
+                    </td>
+                    <td align="center">50</td>
+                    <td align="center">50</td>
+                    <td align="center">50</td>
+                    <td align="center">50</td>
+                    <td align="center">50</td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

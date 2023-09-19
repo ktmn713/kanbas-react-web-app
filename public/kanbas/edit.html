@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+
+<table width="100%">
+    <tbody>
+    <tr>
+        <td width="10%" valign="top">
+            <ul>
+                <li><a href="profile/index.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="courseNav.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+
+        <td widht="10%" valign="top">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </td>
+        <td width="80%" valign="top">
+            <form id="edit-fields">
+                <select>
+                    <option selected value="SPEEDGRADER">SpeedGrader</option>
+                    <option value="TA">TA</option>
+                    <option value="PROF">Professor</option>
+                </select>
+                <hr>
+                <h2>Assignment Name</h2>
+                <br/>
+
+                <input type="text" id="edit-name" value="A1 - ENV + HTML">
+                <br/> <br/>
+
+                <textarea cols="30" row="10">This is the assignment description.</textarea>
+                <br/> <br/>
+
+                <label for="edit-points">Points</label> <br/>
+                <input type="number" id="edit-points" value="100">
+                <br/> <br/>
+
+                <label for="edit-assignment-group">Assignment Group</label> <br/>
+                <select id="edit-assignment-group">
+                    <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+                    <option value="QUIZZES">QUIZZES</option>
+                    <option value="EXAMS">EXAMS</option>
+                </select>
+                <br/> <br/>
+
+                <label for="edit-grade-display">Display Grade as</label> <br/>
+                <select id="edit-grade-display">
+                    <option selected value="PERCENTAGE">PERCENTAGE</option>
+                    <option value="NUMBER">NUMBER</option>
+                </select>
+                <br/> <br/>
+
+                <label for="edit-submission-type">Submission Type</label> <br/>
+                <select id="edit-submission-type">
+                    <option selected value="ONLINE">Online</option>
+                    <option value="GRADESCOPE">Gradescope</option>
+                </select>
+                <br/> <br/>
+
+                <label>Online Entry Options</label> <br/>
+
+                <input type="checkbox" name="edit-entry-options"
+                       id="checkbox-text" value="TEXT-ENTRY">
+                <label for="checkbox-text">Text Entry</label>
+                <br/>
+
+                <input type="checkbox" name="edit-entry-options"
+                       id="checkbox-url" value="URL-ENTRY">
+                <label for="checkbox-url">Website URL</label>
+                <br/>
+
+                <input type="checkbox" name="edit-entry-options"
+                       id="checkbox-media" value="MEDIA-ENTRY">
+                <label for="checkbox-media">Media Recordings</label>
+                <br/>
+
+                <input type="checkbox" name="edit-entry-options"
+                       id="checkbox-annotation" value="ANNOTATION-ENTRY">
+                <label for="checkbox-annotation">Student Annotation</label>
+                <br/>
+
+                <input type="checkbox" name="edit-entry-options"
+                       id="checkbox-file" value="FILE-ENTRY">
+                <label for="checkbox-file">File Uploads</label>
+                <br/>
+
+                <br/> <br/>
+
+                <label for="edit-submission-attempts">Submission Attempts</label> <br/>
+                <select id="edit-submission-attempts">
+                    <option selected value="UNLIMITED">Unlimited</option>
+                    <option value="ONE">One</option>
+                    <option value="FIVE">Five</option>
+                </select>
+                <br/> <br/>
+
+                <label for="edit-plagiarism-review">Plagiarism Review</label> <br/>
+                <select id="edit-plagiarism-review">
+                    <option selected value="NONE">None</option>
+                    <option value="ALL">All</option>
+                </select>
+                <br/> <br/>
+
+                <label>Group Assignment</label> <br/>
+                <input type="checkbox" id="checkbox-group" value="GROUP">
+                <label for="checkbox-group">This is a group assignment</label>
+                <br/> <br/>
+
+                <label>Peer Reviews</label> <br/>
+                <input type="checkbox" id="checkbox-peer" value="PEER">
+                <label for="checkbox-peer">Require Peer Reviews</label>
+                <br/> <br/>
+
+                <label for="edit-assign-to">Assign <br/> Assign to</label> <br/>
+                <input type="text"
+                       id="edit-assign-to" value="Everyone">
+                <br/> <br/>
+
+                <label for="edit-fields-due">Due</label> <br/>
+                <input type="date"
+                       id="edit-fields-due"/> <br/> <br/>
+                <label for="edit-fields-available-from">Available From</label> <br/>
+                <input type="date"
+                       id="edit-fields-available-from"/> <br/> <br/>
+                <label for="edit-fields-available-until">Available Until</label> <br/>
+                <input type="date"
+                       id="edit-fields-available-until"/> <br/> <br/>
+
+                <a href="assignments.html">
+                    <button type="button">Cancel</button>
+                    <button type="button">Save</button>
+                </a>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
