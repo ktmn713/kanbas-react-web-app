@@ -1,0 +1,182 @@
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .wd-flex-grow-1 {
+    flex-grow: 1;
+
+  }
+  .wd-width-85px {
+    width: 85px;
+  }
+  
+
+/* Colors */
+
+.wd-nu-red{
+    color: #B52828;
+}
+
+
+
+.wd-bg-color-red {
+    background-color: #B52828;
+ }
+ .wd-bg-color-black {
+    background-color: black;
+ }
+
+    .wd-bg-color-white {
+        background-color: white;
+    }
+
+
+    .wd-fg-color-red {
+        background-color: #B52828;
+    }
+
+
+    .wd-fg-color-black {
+        color: black;
+    }
+
+    .wd-fg-color-white {
+        color: white;
+    }
+
+    .wd-pos-account-nav {
+        width: 200px;
+        top: 50%;
+        margin-top: 100px;
+        margin-left: 25px; 
+    }
+
+    .wd-account-nav-ul {
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        border:0;
+    }
+
+    .wd-account-nav-li-active{
+        color: black; 
+        text-decoration: none;  
+        border-left: 1px solid black;    
+        padding-left: 10px;  
+        margin-right: 50px;
+    }
+
+    .wd-account-nav-li {
+        color: #B52828; 
+        text-decoration: none;  
+        margin-right: 50px;
+    }
+    
+    .wd-pos-profile {
+        flex-grow: 1;
+        height: 50%;
+        top: 50%;
+        margin-top: 100px;
+        margin-left: 25px; 
+        overflow-y: scroll;    
+        padding-bottom: 20px;
+    }
+
+
+    .wd-profile-icon {
+        color: #c7cdd1;
+
+    }
+
+    .wd-profile-name {
+        color: #2D3B45;
+        font-size: 2rem;
+        font-style: bold;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .wd-profile-subtitle {
+        color: #2D3B45;
+        font-size: 1.5rem;
+        font-style: bold;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .wd-profile-text {
+        color: #2D3B45;
+        font-size: 1rem;
+        font-style: default;
+    }
+
+    .wd-profile-link {
+        color:#B52828;
+        text-decoration: none;
+    }
+
+    .wd-profile-edit-button {
+        width: 128px;
+        height: 40px;
+        text-decoration: none;
+        color: #2D3B45;
+        font-style: default;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        background-color: #f5f5f5;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #c7cdd1;
+        border-radius: 3px;
+        font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    padding:0.5rem;
+    
+     }
+
+     .wd-profile-cancel-edit-button {
+        width: 150px;
+        height: 40px;
+        text-decoration: none;
+        color: #2D3B45;
+        font-style: default;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        background-color: #f5f5f5;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #c7cdd1;
+        border-radius: 3px;
+        font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    padding:0.5rem;
+    
+     }
+
+     .wd-profile-edit-button-text {
+        color: #2D3B45;
+        font-size: 1rem;
+        font-style: default;
+        text-decoration: none;
+     }
+     
+
+
+     
+
+     .wd-profile-header {
+        color: #2D3B45;
+        font-size: 1.125rem;
+        font-style: bold;
+        top: 0;
+        left: 105px;
+        position: fixed;
+        background-color: white;
+        width:100%;
+        border-bottom: 1px solid #c7cdd1;
+        padding: 2rem;
+     }

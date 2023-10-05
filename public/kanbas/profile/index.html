@@ -1,56 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
+        <meta charset="UTF-8">
+        <title>Profile</title>
+
+        <link href="../kanbasNav.css" rel="stylesheet" />
+        <link href="accountNav.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet" />
 </head>
+
 <body>
 
-<table width="100%">
-    <tbody>
-    <tr>
-        <td width="10%" valign="top">
-            <ul>
-                <li><a href="index.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="../courseNav.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td width="20%" valign="top">
-            <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="index.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="../settings.html">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly Course Tools</a></li>
-                <li><a href="#">Global Announcements</a></li>
-            </ul>
-        </td>
-        <td width="70%" valign="top">
-            Katie Nguyen's Profile
-            <hr>
-            <h1>Katie Nguyen <a href="edit.html"><button>&#9998;Edit Profile</button></a></h1>
-            <h1>Contact</h1>
-            No registered services, you can add some on the settings page.
 
-            <h1>Biography</h1>
-            Student, Computer Engineering
+        <div class="wd-flex-row-container">
+                <div class="wd-width-85px">
+                <ul class="wd-kanbas-nav-ul
+                nav flex-column 
+                nav nav-pills">
+                    <li class="wd-kanbas-nav-li"><img src="../../images/NUlogo.jpeg" height="70px"></li>
+        
+                    <a class="wd-kanbas-nav-active-link" href="profile/index.html">
+                        <li class="nav-item wd-kanbas-nav-li-active">
+                            <i class="fa-solid fa-circle-user fa-2x" style="color:#c7cdd1"></i> <br />
+                            Account
+                        </li>
+                    </a>
+                    <li class="nav-item wd-kanbas-nav-li"><a class="wd-fg-color-white" href="#">
+                            <i class="fa-solid fa-gauge fa-2x" style="color:#B52828"></i> <br />
+                            Dashboard</a></li>
+                    <li class="nav-item wd-kanbas-nav-li"><a class="wd-fg-color-white" href="courseNav.html">
+                            <i class="fa-solid fa-book fa-2x" style="color: #B52828"></i> <br />
+                            Courses</a></li>
+                    <li class="nav-item wd-kanbas-nav-li"><a class="wd-fg-color-white" href="#">
+                            <i class="fa-solid fa-calendar-days fa-2x" style="color: #B52828"></i> <br />
+                            Calendar</a></li>
+                    <li class="nav-item wd-kanbas-nav-li"><a class="wd-fg-color-white" href="#">
+                            <i class="fa-solid fa-inbox fa-2x" style="color: #B52828"></i> <br />
+                            Inbox</a></li>
+                    <li class="nav-item wd-kanbas-nav-li"><a class="wd-fg-color-white" href="#">
+                            <i class="fa-regular fa-clock fa-2x" style="color: #B52828"></i> <br />
+                            History</a></li>
+                    <li class="nav-item wd-kanbas-nav-li"><a class="wd-fg-color-white" href="#">
+                            <i class="fa-solid fa-clapperboard fa-2x" style="color: #B52828"></i> <br />
+                            Studio</a></li>
+                    <li class="nav-item wd-kanbas-nav-li"><a class="wd-fg-color-white" href="#">
+                            <i class="fa-solid fa-right-from-bracket fa-2x" style="color: #B52828"></i> <br />
+                            Commons</a></li>
+                    <li class="nav-item wd-kanbas-nav-li"><a class="wd-fg-color-white" href="#">
+                            <i class="fa-regular fa-circle-question fa-2x" style="color: #B52828"></i> <br />
+                            Help</a></li>
+                </ul>
+            </div>
 
-            <h1>Links</h1>
-            <a href="https://www.youtube.com/">YouTube</a>
-        </td>
-    </tr>
-    </tbody>
-</table>
+                <div class="wd-pos-account-nav">
+                        <ul class="wd-account-nav-ul">
+                                <li class="nav-item"><a class="wd-account-nav-li" href="#">Notifications</a></li>
+                                <li class="nav-item"><a class="wd-account-nav-li-active" href="index.html">Profile</a>
+                                </li>
+                                <li class="nav-item"><a class="wd-account-nav-li" href="#">Files</a></li>
+                                <li class="nav-item"><a class="wd-account-nav-li" href="../settings.html">Settings</a>
+                                </li>
+                                <li class="nav-item"><a class="wd-account-nav-li" href="#">ePortfolios</a></li>
+                                <li class="nav-item"><a class="wd-account-nav-li" href="#">Shared Content</a></li>
+                                <li class="nav-item"><a class="wd-account-nav-li" href="#">The Hub</a></li>
+                                <li class="nav-item"><a class="wd-account-nav-li" href="#">Qwickly Course Tools</a></li>
+                                <li class="nav-item"><a class="wd-account-nav-li" href="#">Global Announcements</a></li>
+                        </ul>
+                </div>
+
+                <div class="wd-profile-header">
+
+                        <i class="fa-solid fa-bars wd-nu-red" style="margin-right: 40px;"></i>
+                        Katie Nguyen's Profile </div>
+
+                
+                <div class="wd-pos-profile">
+
+                        <div><i class="fa-solid fa-circle-user fa-10x wd-profile-icon"></i>
+                                        <div class="wd-profile-edit-button"><a class="wd-profile-edit-button-text" href="edit.html">
+                                                <i class="fa-solid fa-pencil"></i>
+                                                Edit Profile
+                                                </a></div>
+                        </div>
+
+                        <div class="wd-profile-name">Katie Nguyen </h1>
+
+                                
+                                <div class="wd-profile-subtitle">Contact</div>
+                                
+                                <div class="wd-profile-text">No registered services, you can add some on the <a class="wd-profile-link" href="#">settings</a> page. </div>
+
+                                <div class="wd-profile-subtitle">Biography</div>
+
+                                <div class="wd-profile-text">Student, Computer Engineering</div>
+
+                                <div class="wd-profile-subtitle">Links</div>
+
+                                <a class="wd-profile-link" href="https://www.youtube.com/">
+                                <div class="wd-profile-text"> 
+                                        <i class="fa-solid fa-link"></i> 
+                                        <span class="wd-profile-link">YouTube</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                                </div>
+                        </a> 
+
+                        </div>
+                </div>
+
+                <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+                        crossorigin="anonymous"></script>
+                <script type="importmap">
+        {
+        "imports": {
+            "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+            "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.esm.min.js"
+        }
+        }
+        </script>
+                <script type="module">
+                        import * as bootstrap from 'bootstrap'
+
+                        new bootstrap.Popover(document.getElementById('popoverButton'))
+                </script>
 
 </body>
+
 </html>

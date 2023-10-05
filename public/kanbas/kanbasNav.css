@@ -1,0 +1,106 @@
+/* Colors */
+
+.wd-nu-red{
+    color: #B52828;
+}
+
+.wd-bg-color-red {
+    background-color: red;
+ }
+ .wd-bg-color-black {
+    background-color: black;
+ }
+
+    .wd-bg-color-white {
+        background-color: white;
+    }
+
+
+    .wd-fg-color-red {
+        background-color: red;
+    }
+
+
+    .wd-fg-color-black {
+        color: black;
+    }
+
+    .wd-fg-color-white {
+        color: white;
+    }
+
+    
+
+
+    /* Positions */
+    .wd-pos-kanbas-nav {
+        display: flex;
+    flex-direction: row;
+    }
+
+    /* Kanbas Nav Styles */
+    .wd-kanbas-nav-selector {
+        background-color: black;
+        color: white;
+    }
+
+    .wd-kanbas-nav-selected {
+        color: #B52828;
+        text-decoration: none;
+    }
+
+.wd-kanbas-nav-ul {
+    list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: black;
+position: fixed;
+top: 0;
+width: 85px;
+font-size:90%;
+font-family: "Arial";
+text-align: center;
+height: 100%;
+border-style: none;
+}
+
+li,
+.wd-kanbas-nav-li {
+  line-height: 1.5;
+  margin-right: 7px;
+  padding: 7px;
+  color: white;
+  background-color: black;
+  width: 85px;
+}
+
+li,
+.wd-kanbas-nav-li-selected {
+    line-height: 1.5;
+  margin-right: 7px;
+  padding: 7px;
+  color: #B52828;
+  text-decoration: none;
+  background-color: white;
+  border-style: none;
+  width: 85px;
+}
+
+.wd-kanbas-nav-active-link {
+    text-decoration: none;
+    color: #B52828;
+}
+
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+  }
+  .wd-flex-grow-1 {
+    flex-grow: 1;
+  }
+  .wd-width-85px {
+    width: 85px;
+  }
