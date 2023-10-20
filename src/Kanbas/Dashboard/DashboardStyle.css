@@ -1,0 +1,10 @@
+.wd-course-card-grid .col {
+    width: 300px;
+    display: inline-block;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
+}

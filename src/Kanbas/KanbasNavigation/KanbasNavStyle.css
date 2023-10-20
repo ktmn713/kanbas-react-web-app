@@ -1,0 +1,44 @@
+.wd-kanbas-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 95px;
+    font-size:90%;
+    display: block;
+    height: 100%;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.wd-kanbas-nav .wd-kanbas-nav-item {
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+    border-color: black;
+    text-align: center;
+}
+
+.list-group-item.active,
+.wd-kanbas-nav-active {
+    background-color: white;
+    border-color: white;
+    color: #B52828;
+    border-radius: 0px;
+}
+
+.wd-kanbas-nav .wd-nav-icon {
+    font-size: 2em;
+    color:#B52828;
+}
+
+.wd-kanbas-nav-item .wd-nu-logo {
+    width: 95px;
+    height: 95px;
+    margin: 0;
+    padding: 0;
+}
