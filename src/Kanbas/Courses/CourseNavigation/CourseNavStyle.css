@@ -1,0 +1,23 @@
+.wd-course-nav {
+  left: 85px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: underline;
+}
+
+.wd-course-nav .wd-course-nav-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: underline;
+    color: #B52828;
+    border-style: none;
+}
+
+.wd-course-nav .wd-course-nav-active {
+    color: black;
+    border-left: 2px solid black;
+}

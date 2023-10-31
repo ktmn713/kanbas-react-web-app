@@ -23,8 +23,8 @@
     text-align: center;
 }
 
-.list-group-item.active,
-.wd-kanbas-nav-active {
+
+.wd-kanbas-nav .wd-kanbas-nav-active {
     background-color: white;
     border-color: white;
     color: #B52828;

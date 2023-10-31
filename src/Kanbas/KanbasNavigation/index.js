@@ -32,7 +32,7 @@ function KanbasNavigation() {
     Dashboard: <RiDashboard3Fill className="wd-nav-icon" />,
     Courses: <FaBook className="wd-nav-icon" />,
     Calendar: <FaCalendar className="wd-nav-icon" />,
-    Inbox: <FaInbox className="wd-nav-icon" />, 
+    Inbox: <FaInbox className="wd-nav-icon" />,
     History: <FaClock className="wd-nav-icon" />,
     Studio: <FontAwesomeIcon icon={faClapperboard} className="wd-nav-icon" />,
     Commons: <FontAwesomeIcon icon={faRightFromBracket} className="wd-nav-icon" />,
@@ -41,30 +41,25 @@ function KanbasNavigation() {
 
   const { pathname } = useLocation();
   return (
-
-    
     <div className="list-group" style={{ width: 150 }}>
-      
       <div className="wd-kanbas-nav">
+        <div className="wd-kanbas-nav-item"><img src="https://images.credly.com/images/432ea12d-444b-42e7-a1d9-f5a3655fb948/blob.png" className="wd-nu-logo" alt="logo" />
+        </div>
+        {links.map((link, index) => (
 
-      
-        <div className="wd-kanbas-nav-item"><img src="https://images.credly.com/images/432ea12d-444b-42e7-a1d9-f5a3655fb948/blob.png" className="wd-nu-logo" alt="logo"/>
-</div>
-      
+          <Link
+            key={index}
+            to={`/Kanbas/${link}`}
+            className={`list-group-item wd-kanbas-nav-item 
+            ${pathname.includes(link) && "wd-kanbas-nav-active"}`}>
+            {linkToIcon[link]} <br />
+            {link}
+
         
-      {links.map((link, index) => (
-        
-        <Link
-          key={index}
-          to={`/Kanbas/${link}`}
-          className={`list-group-item wd-kanbas-nav-item ${pathname.includes(link) && "active"}`}>
+          </Link>
+        ))}
 
-          {linkToIcon[link]} <br />
-          {link}
-        </Link>
-      ))}
-
-</div>
+      </div>
     </div>
 
   );

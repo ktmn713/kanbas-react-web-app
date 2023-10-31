@@ -1,0 +1,56 @@
+[
+    {
+      "_id": "M101",
+      "name": "Syllabus",
+      "description": "Course expectations, grading policy, and course outline.",
+      "course": "CS101"
+    },
+    {
+      "_id": "M102",
+      "name": "Introduction to Web Development",
+      "description": "Overview of the Internet, web servers, and web development.",
+      "course": "CS101"
+    },
+    {
+      "_id": "M103",
+      "name": "CSS",
+      "description": "Introduction to CSS.",
+      "course": "CS101"
+    },
+    {
+      "_id": "M201",
+      "name": "Syllabus",
+      "description": "Course expectations, grading policy, and course outline.",
+      "course": "CS102"
+    },
+    {
+      "_id": "M202",
+      "name": "Introduction to Database Design",
+      "description": "Overview of database design and management.",
+      "course": "CS102"
+    },
+    {
+      "_id": "M203",
+      "name": "SQL",
+      "description": "Introduction to SQL.",
+      "course": "CS102"
+    },
+    {
+      "_id": "M301",
+      "name": "Syllabus",
+      "description": "Course expectations, grading policy, and course outline.",
+      "course": "CS103"
+    },
+    {
+      "_id": "M302",
+      "name": "Introduction to Algorithms & Data",
+      "description": "Overview of algorithms and data structures",
+      "course": "CS103"
+    },
+    {
+      "_id": "M303",
+      "name": "Time Complexity",
+      "description": "Big O notation and time complexity of algorithms.",
+      "course": "CS103"
+    }
+  ]
