@@ -11,7 +11,7 @@ function Dashboard(
 
     return (
         <div>
-            <h1>Dashboard</h1>
+            <div className="wd-header">Dashboard</div>
             <hr />
             <h5>Course</h5>
             <input value={course.name} className="form-control" onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
@@ -24,7 +24,8 @@ function Dashboard(
             <button onClick={updateCourse} > Update </button>
 
 
-            <h2>Published Courses ({courses.length})</h2>
+            <div className="wd-subtitle">Published Courses ({courses.length})</div>
+            <h2></h2>
             <div className="card-deck wd-course-card-grid">
                 {courses.map((course) => (
                     <Link key={course._id}

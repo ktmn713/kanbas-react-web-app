@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './KanbasNavStyle.css';
@@ -43,7 +44,7 @@ function KanbasNavigation() {
   return (
     <div className="list-group" style={{ width: 150 }}>
       <div className="wd-kanbas-nav">
-        <div className="wd-kanbas-nav-item"><img src="https://images.credly.com/images/432ea12d-444b-42e7-a1d9-f5a3655fb948/blob.png" className="wd-nu-logo" alt="logo" />
+        <div className="wd-kanbas-nav-item"><img src={require("./NUCanvaslogo.png")} className="wd-nu-logo" alt="logo" />
         </div>
         {links.map((link, index) => (
 
