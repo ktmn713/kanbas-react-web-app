@@ -15,31 +15,19 @@
     font-size: 24px;
     font-weight: 400;
     color: rgb(45, 59, 69);
-    column-span: all;
 }
 
-/* Course Cards */
-
-.wd-course-card-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: start;
+.wd-profile-text {
+    color: #2D3B45;
+    font-size: 1rem;
+    font-style: default;
 }
 
-.wd-course-card-grid .card {
-    width: 250px;
-    height: 300px;
-    margin: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.wd-profile-icon {
+    color: #c7cdd1;
+    font-size: 250px;
 }
 
-/* Course Editor */
-.wd-edit-course {
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    width: 250px;
-}
 /* Buttons */
 
 .wd-buttons {

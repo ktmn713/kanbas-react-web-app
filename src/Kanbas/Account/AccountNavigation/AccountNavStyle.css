@@ -1,0 +1,28 @@
+.wd-acc-nav {
+    left: 85px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: underline;
+  }
+  
+  .wd-acc-nav .wd-acc-nav-item {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: underline;
+      color: #B52828;
+      border-style: none;
+  }
+  
+  .wd-acc-nav .wd-acc-nav-active {
+      color: black;
+      border-left: 2px solid black;
+  }
+
+  .wd-icons {
+    color:#B52828;
+    margin-right: 20px;
+  }
