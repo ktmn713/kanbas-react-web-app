@@ -3,7 +3,7 @@ import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
 
 
-function AssignmentEditor() {
+function AssignmentEditor({courses}) {
   const { assignmentId } = useParams();
   const assignment = db.assignments.find(
     (assignment) => assignment._id === assignmentId);
@@ -17,6 +17,8 @@ function AssignmentEditor() {
   };
   return (
     <div>
+      <br/>
+      <br/>
       <h2>Assignment Name</h2>
       <input value={assignment.title}
              className="form-control mb-2" />

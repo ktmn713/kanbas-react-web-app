@@ -19,24 +19,29 @@ function ModuleList() {
     <ul className="list-group">
 
       <li className="list-group-item">
-        <button
+        <button className="wd-buttons"
           onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
           Add
         </button>
-        <button
+        <button className="wd-buttons"
           onClick={() => dispatch(updateModule(module))}>
           Update
         </button>
-        <input
+        <div>
+          <input
           value={module.name}
           onChange={(e) =>
             dispatch(setModule({ ...module, name: e.target.value }))
           } />
-        <textarea
+          </div>
+
+        
+        <div><textarea
           value={module.description}
           onChange={(e) =>
             dispatch(setModule({ ...module, description: e.target.value }))
-          } />
+          } /></div>
+        
       </li>
 
 
@@ -48,11 +53,11 @@ function ModuleList() {
             <li key={index} className="list-group-item">
 
 
-              <button
+              <button className="wd-buttons"
                 onClick={() => dispatch(setModule(module))}>
                 Edit
               </button>
-              <button
+              <button className="wd-buttons"
                 onClick={() => dispatch(deleteModule(module._id))}>
                 Delete
               </button>

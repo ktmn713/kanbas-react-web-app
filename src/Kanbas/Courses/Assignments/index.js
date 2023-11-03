@@ -10,7 +10,9 @@ function Assignments() {
     (assignment) => assignment.course === courseId);
   return (
     <div>
-      <h2>Assignments for course {courseId}</h2>
+      <br/>
+      <br/>
+      <h2>Assignments for {courseId}</h2>
       <div className="list-group">
         {courseAssignments.map((assignment) => (
           <Link
