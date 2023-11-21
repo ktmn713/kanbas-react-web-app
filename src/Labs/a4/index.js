@@ -13,6 +13,7 @@ import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 import ReduxExamples from "./ReduxExamples";
 
+
 const Assignment4 = () => {
   function sayHello() {
     alert("Hello");
@@ -33,6 +34,7 @@ const Assignment4 = () => {
       <ArrayStateVariable/>
       <ParentStateComponent/>
       <ReduxExamples/>
+      
       
    </>
  );

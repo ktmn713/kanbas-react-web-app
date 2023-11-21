@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
+import AssignmentList from "../AssignmentList";
 
 
 function AssignmentEditor({courses}) {
@@ -17,7 +18,7 @@ function AssignmentEditor({courses}) {
   };
   return (
     <div>
-      <br/>
+      {/* <br/>
       <br/>
       <h2>Assignment Name</h2>
       <input value={assignment.title}
@@ -28,7 +29,13 @@ function AssignmentEditor({courses}) {
       </Link>
       <button onClick={handleSave} className="btn btn-success me-2">
         Save
-      </button>
+      </button> */}
+
+      <br/>
+      <br/>
+
+      <h2>Assignments</h2>
+      <AssignmentList />
     </div>
   );
 }
