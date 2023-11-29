@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database"
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
@@ -15,16 +16,42 @@ function ModuleList() {
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = (module) => {
+    client.updateModule(module).then((status) => {;
+    dispatch(updateModule(module));
+    });
+  };
+
+
   return (
     <ul className="list-group">
 
       <li className="list-group-item">
         <button className="wd-buttons"
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+          onClick={handleAddModule}>
           Add
         </button>
         <button className="wd-buttons"
-          onClick={() => dispatch(updateModule(module))}>
+          onClick={() => handleUpdateModule(module)}>
           Update
         </button>
         <div>
@@ -58,11 +85,9 @@ function ModuleList() {
                 Edit
               </button>
               <button className="wd-buttons"
-                onClick={() => dispatch(deleteModule(module._id))}>
+                onClick={() => handleDeleteModule(module._id)}>
                 Delete
               </button>
-
-
 
 
               <h3>{module.name}</h3>

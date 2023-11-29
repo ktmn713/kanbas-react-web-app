@@ -1,5 +1,6 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
+import axios from "axios";
+
 
 function EncodingParametersInURLs() {
     const [a, setA] = useState(34);
@@ -65,17 +66,18 @@ function EncodingParametersInURLs() {
 
 
             <input value={result}
-                className="form-control mb-2" type="number" readOnly
-            />
-            <h3>Fetch Result</h3>
-            <button onClick={() => fetchSum(a, b)}
-                className="btn btn-primary mb-2  w-100" >
-                Fetch Sum of {a} + {b}
-            </button>
-            <button onClick={() => fetchSubtraction(a, b)}
-                className="btn btn-danger me-2 w-100" >
-                Fetch Substraction of {a} - {b}
-            </button>
+        className="form-control mb-2" type="number" readOnly
+      />
+      <h3>Fetch Result</h3>
+      <button onClick={() => fetchSum(a, b)}
+        className="btn btn-primary mb-2  w-100" >
+        Fetch Sum of {a} + {b}
+      </button>
+      <button onClick={() => fetchSubtraction(a, b)}
+        className="btn btn-danger me-2 w-100" >
+        Fetch Substraction of {a} - {b}
+      </button>
+
 
 
 
