@@ -40,7 +40,7 @@ function EncodingParametersInURLs() {
                 className="form-control" type="number" value={b} />
             <h3>Path Parameters</h3>
             <a
-                href={`${URL}/add/${a}/${b}`}
+                href={`${API_BASE}/a5/add/${a}/${b}`}
                 className="btn btn-primary">
                 Add {a} + {b}
             </a>
