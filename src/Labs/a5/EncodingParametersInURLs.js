@@ -7,7 +7,7 @@ function EncodingParametersInURLs() {
     const [b, setB] = useState(23);
     const [welcome, setWelcome] = useState("");
     const API_BASE = process.env.REACT_APP_API_BASE;
-    const URL = `${API_BASE}/Labs/a5`;
+    const URL = `${API_BASE}/a5`;
     const fetchWelcome = async () => {
         const response = await axios.get(`${URL}/welcome`);
         setWelcome(response.data);
@@ -15,12 +15,12 @@ function EncodingParametersInURLs() {
     const [result, setResult] = useState(0);
     const fetchSum = async (a, b) => {
         const response = await
-            axios.get(`${URL}add/${a}/${b}`);
+            axios.get(`${URL}/add/${a}/${b}`);
         setResult(response.data);
     };
     const fetchSubtraction = async (a, b) => {
         const response = await axios.get(
-            `${URL}subtract/${a}/${b}`);
+            `${URL}/subtract/${a}/${b}`);
         setResult(response.data);
     };
 
