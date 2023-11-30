@@ -9,7 +9,6 @@ import { Provider } from "react-redux";
 import './index.css';
 import Account from "./Account";
 import axios from "axios";
-import * as service from "./service";
 
 
 function Kanbas() {
@@ -18,7 +17,8 @@ function Kanbas() {
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
-  const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
