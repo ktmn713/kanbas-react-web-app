@@ -12,7 +12,8 @@ function WorkingWithArrays() {
     });
 
 
-    const API = "http://localhost:4000/a5/todos";
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const API = `${API_BASE}/Labs/a5`;
 
     const [todos, setTodos] = useState([]);
     const fetchTodos = async () => {
