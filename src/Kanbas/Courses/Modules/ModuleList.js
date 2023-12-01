@@ -20,7 +20,7 @@ function ModuleList() {
     client.findModulesForCourse(courseId)
       .then((modules) =>
         dispatch(setModules(modules))
-    );
+    );      
   }, [courseId]);
 
   const handleAddModule = () => {
