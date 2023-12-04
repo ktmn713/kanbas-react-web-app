@@ -8,7 +8,7 @@ function Assignment5() {
   const URL = `${API_BASE}/a5`;
     return (
       <div>
-        <h1>Assignment 5 - working?</h1>
+        <h1>Assignment 5</h1>
         <div className="list-group">
           <a href={`${URL}/welcome`}
              className="list-group-item">
