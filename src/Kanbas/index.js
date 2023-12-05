@@ -11,14 +11,21 @@ import Account from "./Account";
 import axios from "axios";
 
 
+
+
 function Kanbas() {
   const [courses, setCourses] = useState(db.courses);
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
-  const API_BASE = process.env.REACT_APP_API_BASE;
+
+  const API_BASE = "http://localhost:4000"
+  // const API_BASE = process.env.REACT_APP_API_BASE;
   const URL = `${API_BASE}/api/courses`;
+
+
+
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
