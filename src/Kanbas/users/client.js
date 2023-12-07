@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// export const BASE_API = process.env.REACT_APP_BASE_API_URL;
-export const BASE_API = "http://localhost:4000";
+export const BASE_API = process.env.REACT_APP_BASE_API_URL;
+// export const BASE_API = "http://localhost:4000";
 export const USERS_API = `${BASE_API}/api/users`;
 
 
@@ -52,14 +52,3 @@ export const createUser = async (user) => {
     const response = await axios.post(`${USERS_API}/signout`);
     return response.data;
   };
-  
-
-// export const signup = async (credentials) => {
-//     const response = await request.post(
-//         `${USERS_API}/signup`, credentials);
-//     return response.data;
-// };
-// export const signout = async () => {
-//     const response = await request.post(`${USERS_API}/signout`);
-//     return response.data;
-// };
