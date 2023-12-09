@@ -4,6 +4,7 @@ import {
     BsPencil, BsPlusCircleFill,
 } from "react-icons/bs";
 import * as client from "./client";
+import { Link } from "react-router-dom";
 
 
 function UserTable() {
@@ -58,8 +59,6 @@ function UserTable() {
                 <thead>
                     <tr>
                         <td>
-                            <BsFillCheckCircleFill onClick={updateUser}
-                                className="me-2 text-success fs-1 text" />
                             Username <input value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })} />
 
                             Password <input value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })} />
@@ -84,25 +83,26 @@ function UserTable() {
                             <BsPlusCircleFill onClick={createUser}
                                 className="text-success fs-1 text" />
                         </td>
-                        <td className="text-nowrap">
-                            <button className="btn btn-danger me-2">
-                                <BsTrash3Fill onClick={() => deleteUser(user)} />
-                            </button>
-                            <button className="btn btn-warning me-2">
-                                <BsPencil onClick={() => selectUser(user)} />
-                            </button>
-                        </td>
+
                     </tr>
                 </thead>
                 <tbody>
                     {users.map((user) => (
                         <tr key={user._id}>
-                            <td>{user.username}</td>
+                            <td><Link to={`/project/account/${user._id}`}>
+                                {user.username}
+                            </Link>
+                            </td>
                             <td>{user.firstName}</td>
                             <td>{user.lastName}</td>
-                            <td><button onClick={() => deleteUser(user)}>
-                                <BsTrash3Fill />
-                            </button></td>
+                            <td className="text-nowrap">
+                                <button className="btn btn-danger me-2">
+                                    <BsTrash3Fill onClick={() => deleteUser(user)} />
+                                </button>
+                                <button className="btn btn-warning me-2">
+                                    <BsPencil onClick={() => selectUser(user)} />
+                                </button>
+                            </td>
                         </tr>))}
                 </tbody>
             </table>

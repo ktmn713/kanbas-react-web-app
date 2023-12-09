@@ -18,11 +18,13 @@ function Signup() {
     <div>
       <h1>Signup</h1>
       {error && <div>{error}</div>}
+      Username
       <input
         value={credentials.username}
         onChange={(e) => setCredentials({
           ...credentials,
           username: e.target.value })} />
+      Password
       <input
         value={credentials.password}
         onChange={(e) => setCredentials({
