@@ -1,0 +1,352 @@
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+.wd-kanbas-navigator {
+    color: #d41b2c;
+    text-decoration: none;
+    padding-left: 0px;
+    margin-left: -8px;
+    width: 82px;
+    font-family: Arial;
+    font-size: .9em;
+    float: left;
+    min-height: 100vh;
+    position: fixed;
+}
+.wd-kanbas-navigator li {
+    list-style-type: None;
+    margin-left: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+}
+.wd-kanbas-navigator a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.wd-kanbas-navigator i {
+    color: #d41b2c;
+    margin-bottom: 5px;
+}
+.wd-kanbas-page-navigator {
+    font-family: Arial;
+    font-size: 1em;
+    float: left;
+    width: 190px;
+    padding-left: 82px;
+}
+.wd-kanbas-page-navigator li {
+    text-decoration: none;
+    list-style-type: None;
+    margin-left: 20px;
+    padding: 8px 0 8px 6px;
+
+}
+.wd-kanbas-page-navigator a {
+    color: #b52828;
+    text-decoration: none;
+}
+.wd-grid-row {
+    clear: both;
+ }
+ .wd-grid-col-page-header {
+    width: 91%;
+    float: top;
+    margin-left: 100px;
+    color: #2d3b45;
+ }
+ .wd-grid-col-page-header i {
+    color: #d41b2c;
+ }
+ .wd-grid-half-col {
+    width: 50%;
+    font-family: Arial;
+    color: #2d3b45;
+    padding-left: 15px; 
+    padding-top: 20px
+ }
+ .wd-grid-half-col a {
+    text-decoration: none;
+    color: #b52828;
+ }
+ .wd-grid-half-col select {
+    width: 220px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    padding: 8px 12px;
+ }
+ .wd-grid-half-col button {
+    margin-left: 8px;
+ }
+ .wd-grid-half-col h3 {
+    font-size: 1.5em; 
+    font-weight: normal;
+    padding: 12px 0 0 0;
+ }
+ .btn-secondary {
+    color: rgb(87, 87, 87) !important;
+    background-color: rgb(248, 248, 248) !important;
+    border-color: rgb(182, 182, 182) !important;
+}
+.biography-text-area {
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    resize: both; 
+    text-align-last: left; 
+    font-size: 16px; 
+    padding-top: 0%; 
+    height: 50px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+ }
+ .profile-links-grid {
+    margin-left: 12px;
+ }
+ .profile-links-grid .col-4 {
+    width: 40% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+ }
+ .profile-links-grid .col {
+    width: 10% !important;
+ }
+ .wd-kanbas-dashboard-navigator {
+   padding-left: 82px;
+ }
+ .wd-kanbas-dashboard-title {
+    color: rgb(45, 59, 69);
+    font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+    line-height: 42.75px;
+    padding-left: 24px;
+ }
+ .wd-kanbas-dashboard-subtitle {
+    margin-left: 36px;
+    font-size: 24px;
+    font-weight: 50;
+    font-family: LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(45, 59, 69);
+ }
+ .wd-kanbas-dashboard-navigator hr {
+     margin-left: 24px;
+     width: 92%;
+ }
+ .course-card {
+    width: 262px;
+    height: 270px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    
+ }
+ .course-card-content {
+    text-decoration: none;
+ }
+ .course-card-content-text :hover {
+    text-decoration: underline;
+ }
+ .course-card-content-text {
+    padding: 12px 18px 0;
+ }
+ .course-card-content :hover {
+    text-decoration: underline;
+ }
+ .course-card-title {
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgb(0, 118, 184);
+ }
+ 
+ .course-card.title span {
+    color: rgb(0, 118, 184);
+ }
+ .course-card-subtitle {
+    color: #677179;
+    font-size: 16px;
+    font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+ }
+ .course-card-details {
+    color: #677179;
+    font-size: 12px;
+    font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+ }
+ .course-card-img {
+    margin: 0; 
+    height: 146px; 
+    width: 261px; 
+    background-color: rgb(0, 118, 184);
+ }
+ .course-card-icon {
+    margin-left: 18px;
+    margin-top: 12px;
+    margin-right: 18px;
+    margin-bottom: 12px;
+    color: gray;
+    text-decoration: none;
+ }
+ .course-card-icon :hover {
+    text-decoration: none;
+    color: red;
+ }
+ .module {
+    font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4c5860;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-top: 25px;
+ }
+ .list-group a {
+    text-decoration: none;
+    color: #b52828;
+    font-weight: normal;
+ }
+ .course-container-header-buttons {
+    padding: 10px 10px;
+}
+.container-modules {
+   width: 80%;
+   padding: 20px;
+}
+ .container-modules hr {
+    margin-top: 65px;
+}
+.module-title-icon {
+    float: right;
+    color:#677179;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.container-module-item-icons {
+   float: right;
+}
+.module-item-icon {
+   margin-left: 15px;
+}
+.container-course-status {
+   width: 290px;
+   padding: 16px 16px;
+}
+.container-course-status h2 {
+   font-size: 16px;
+}
+.container-course-status li {
+   list-style-type: none;
+}
+.container-course-status ul {
+   padding-left: 0;
+}
+.container-course-status button {
+   width: 240px;
+   margin: 4px;
+   margin-right: 20px;
+   text-align: left;
+}
+.breadcrumb-header {
+   padding-top: 25px;
+   font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 18px;
+   color: rgb(45, 59, 69);
+   font-weight: 400; 
+}
+.container-coming-up {
+   padding: 0px 10px 0 10px;
+}
+.container-coming-up a {
+   text-decoration: none;
+   color: #b52828;
+}
+.container-coming-up li {
+   text-decoration: none;
+   margin-top: 15px;
+}
+.selected-page-nav-link {
+   color: black;
+   border-left: 2px solid
+}
+.selected-page-nav-link a {
+   color: black; font-weight: 600;
+}
+.container-assignments {
+   width: 85%;
+   padding: 25px;
+   padding-left: 50px;
+}
+.assignments ul {
+   background-color: rgb(245, 245, 245);
+   border-bottom-color: rgb(199, 205, 209);
+   border-top-color: rgb(199, 205, 209);
+   border-left-color: rgb(199, 205, 209);
+   border-right-color: rgb(199, 205, 209);
+   border: 1px solid #c7cdd1;
+}
+.assignments li {
+   list-style-type: none;
+   font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: rgb(76, 88, 96);
+   padding-left: 60px;
+   border-left: 5px solid green;
+}
+.assignment-item-icons {
+   float: right;
+   size: 18px;
+}
+.assignments a {
+   font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   color: #2d3b45;
+   font-weight: bold;
+}
+.badge {
+   font-size: 14px !important;
+   margin-top: 3px !important;
+   border-radius: 1rem !important;
+   color: #5f6367 !important;
+   border-color: #c7cdd1 !important;
+   border: 1px solid;
+}
+.unfinished li {
+   border-left: 1px solid #c7cdd1;
+}
+.wd-kanbas-navigator a:hover {
+   color: white;
+}
+.wd-kanbas-page-navigator a:hover {
+   color: #b52828;
+}
+.assignment-published {
+   font-family: Lato Extended, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+   color: green;
+}
+.assignment-edit-label {
+   text-align: right;
+}
+.online-entry-options input {
+   margin-top: 20px;
+}
+.online-entry-options label {
+   padding-left: 5px;
+}
+.assignment-edit-assign-to {
+   border: 1px solid rgb(206, 212, 218); border-radius: .25em; border-bottom-left-radius: 0em; border-bottom-right-radius: 0em;
+}
+.grades-header-buttons button {
+}

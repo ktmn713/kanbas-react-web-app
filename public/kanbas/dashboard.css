@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+
+/* Header */
+.wd-header {
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    color: rgb(45, 59, 69);
+    column-span: all;
+}
+
+/* Subtitle */
+.wd-subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(45, 59, 69);
+    column-span: all;
+}
+
+/* Course Cards */
+
+.wd-course-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: start;
+}
+
+.wd-course-card-grid .card {
+    width: 250px;
+    height: 300px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Course Editor */
+.wd-edit-course {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    width: 250px;
+}
+/* Buttons */
+
+.wd-buttons {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+    border-radius: .25rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: rgb(45, 59, 69);
+    margin: 5px;
+}
+
+
